@@ -73,7 +73,7 @@ export default function HomePage() {
               {[
                 {
                   title: 'Garden Ceremony',
-                  img: '/wedding/floral-decoration-wedding-ceremony.jpg',
+                  img: '/wedding/magical-floral-arches.jpg',
                 },
                 {
                   title: 'Ballroom Reception',
@@ -98,7 +98,7 @@ export default function HomePage() {
           <div className="relative">
             <div className="relative h-[520px]">
               <Image
-                src="/wedding/couple.jpg"
+                src="/wedding/weddingpic.png"
                 alt="Wedding Couple"
                 fill
                 className="object-cover"
