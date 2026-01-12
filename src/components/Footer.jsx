@@ -40,7 +40,7 @@ export default function Footer() {
         <div className="space-y-4 text-sm">
           {/* Logos */}
           <div className="flex gap-4 mb-4">
-            <Image src="/wedding/maharani.png" alt="Maharani" width={70} height={70} />
+            <Image src="/wedding/mahndi.png" alt="Maharani" width={70} height={70} />
             <Image src="/wedding/platinum.png" alt="Platinum" width={70} height={70} />
             <Image src="/wedding/blink.png" alt="Blink" width={70} height={70} />
           </div>
