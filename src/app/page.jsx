@@ -9,7 +9,7 @@ export default function HomePage() {
       {/* ================= HERO ================= */}
       <section className="relative h-[75vh] md:h-[80vh] flex items-center">
         <Image
-          src="/wedding/weddingpic.png"
+          src="/wedding/weddingX.jpg"
           alt="Luxury Wedding"
           fill
           priority
