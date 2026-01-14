@@ -5,21 +5,23 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <nav className="bg-black text-white px-6 py-4 flex items-center justify-between">
-      
+    <nav className="bg-black text-white px-4 py-1 flex items-center justify-between">
       {/* LOGO */}
       <div className="flex items-center">
-        <Image
-          src="/wedding/Elegantize-Logo.png"
-          alt="Elegantize Logo"
-          width={120}
-          height={40}
-          className="object-contain"
-        />
+        {/* container must be relative for Image fill to work */}
+        <div className="relative w-28 h-8 md:w-36 md:h-10">
+          <Image
+            src="/Homepage/logo.png"
+            alt="Elegantize Logo"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
       </div>
 
       {/* NAV LINKS */}
-      <ul className="hidden md:flex gap-8 text-[16px] font-medium">
+      <ul className="hidden md:flex gap-5 text-sm font-medium">
         <li><Link href="/" className="hover:text-[#c6a062]">Home</Link></li>
         <li><Link href="/about" className="hover:text-[#c6a062]">About</Link></li>
         <li><Link href="/services" className="hover:text-[#c6a062]">Services</Link></li>
@@ -32,7 +34,7 @@ export default function Navbar() {
 
       {/* MOBILE MENU BUTTON */}
       <div className="md:hidden">
-        <button className="text-2xl">☰</button>
+        <button className="text-xl">☰</button>
       </div>
     </nav>
   );
